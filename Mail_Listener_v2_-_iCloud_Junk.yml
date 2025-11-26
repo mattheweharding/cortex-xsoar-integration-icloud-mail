@@ -1,0 +1,564 @@
+commonfields:
+  id: Mail Listener v2 - iCloud Junk
+  version: -1
+vcShouldKeepItemLegacyProdMachine: false
+name: Mail Listener v2 - iCloud Junk
+display: Mail Listener v2 - iCloud Junk
+category: Messaging and Conferencing
+image: data:image/png;base64,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
+description: Listens to a mailbox and enables incident triggering via e-mail.
+detaileddescription: |-
+  This integration allows listening to a mailbox and spawn an incident from the receipt of the email.
+  While this integration is designed to work with any IMAP server such as AT&T, Yahoo, BT Connect, etc.
+  If You are using Exchange on-premise, Exchange Online, or Gmail - we do recommend working with the product specific integrations.
+
+  If the IMAP server requires client certificates and private keys, please configure the **Client Certificate And Private Key (List of PEMs)** parameter with the appropriate keys.
+
+
+  ---
+  [View Integration Documentation](https://xsoar.pan.dev/docs/reference/integrations/mail-listener-v2)
+configuration:
+- section: Connect
+  display: Mail Server Hostname / IP address
+  name: MailServerURL
+  type: 0
+  required: true
+- section: Connect
+  display: IMAP Port
+  name: port
+  defaultvalue: "143"
+  type: 0
+  required: true
+- section: Connect
+  display: Username
+  name: credentials
+  type: 9
+  required: true
+- section: Connect
+  advanced: true
+  display: ""
+  displaypassword: Client Certificate And Private Key (List of PEMs)
+  name: clientCertAndKey
+  type: 9
+  required: false
+  hiddenusername: true
+- section: Connect
+  display: Incoming mail folder
+  name: folder
+  defaultvalue: INBOX
+  type: 0
+  required: true
+- section: Collect
+  display: Fetch incidents
+  name: isFetch
+  type: 8
+  required: false
+- section: Connect
+  display: Incident type
+  name: incidentType
+  type: 13
+  required: false
+- section: Collect
+  advanced: true
+  display: Fetch mails from these senders addresses only (eg. admin@demo.com,test@demo.com)
+  name: permittedFromAdd
+  type: 0
+  required: false
+- section: Collect
+  advanced: true
+  display: Fetch mails from these domains only (eg. demo.com, test.com)
+  name: permittedFromDomain
+  type: 0
+  required: false
+- section: Collect
+  advanced: true
+  display: Query search with headers
+  name: with_headers
+  defaultvalue: "false"
+  type: 8
+  required: false
+  additionalinfo: Whether to query search with headers when filtering by sender's
+    email address.
+- section: Collect
+  display: First fetch time
+  name: first_fetch
+  defaultvalue: 1 hour
+  type: 0
+  required: false
+- section: Collect
+  display: The maximum number of incidents to fetch each time
+  name: limit
+  defaultvalue: "50"
+  type: 0
+  required: false
+- section: Collect
+  advanced: true
+  display: Delete processed emails
+  name: delete_processed
+  type: 8
+  required: false
+- section: Collect
+  advanced: true
+  display: Include raw body in incidents
+  name: Include_raw_body
+  type: 8
+  required: false
+- section: Collect
+  advanced: true
+  display: Save the email .eml file
+  name: save_file
+  type: 8
+  required: false
+- section: Connect
+  advanced: true
+  display: Use TLS for connection (defaults to True)
+  name: TLS_connection
+  defaultvalue: "true"
+  type: 8
+  required: false
+- section: Connect
+  advanced: true
+  display: Trust any certificate (not secure)
+  name: insecure
+  type: 8
+  required: false
+- display: Incidents Fetch Interval
+  name: incidentFetchInterval
+  defaultvalue: "1"
+  type: 19
+  required: false
+script:
+  script: |-
+    register_module_line('Mail Listener v2', 'start', __line__())
+    CONSTANT_PACK_VERSION = '1.0.63'
+    demisto.debug('pack id = MailListener, pack version = 1.0.63')
+
+    import re
+    import ssl
+    import email
+    from datetime import timezone, datetime
+    from typing import Any
+    from email.message import Message
+    from dateparser import parse
+    from mailparser import parse_from_bytes, parse_from_string
+    from imap_tools import OR
+    from imapclient import IMAPClient
+    from tempfile import NamedTemporaryFile
+    import traceback
+    import json
+
+    # ==============================================================================
+    # GLOBAL CONFIGURATION VARIABLES
+    # ==============================================================================
+
+    # FIXED_REPORTER_EMAIL:
+    # This variable forces the "Reporter" and "To" fields to a specific email address.
+    # This is necessary because:
+    # 1. Spam often has missing or malformed "To" headers.
+    # 2. We want to ensure the Phishing Playbook runs against a valid internal user,
+    #    regardless of who the spam was actually addressed to (e.g. BCC).
+    FIXED_REPORTER_EMAIL = "youremail@icloud.com"
+
+    # ==============================================================================
+
+    class Email:
+        def __init__(self, message_bytes: bytes, include_raw_body: bool, save_file: bool, id_: int) -> None:
+            self.mail_bytes = message_bytes
+            self.id = id_
+
+            # --- RESILIENT PARSING LOGIC ---
+            # Standard parsers often crash on malformed spam (bad encoding, broken MIME boundaries).
+            # We attempt parsing in 3 stages:
+            # 1. Parse raw bytes (Best).
+            # 2. Parse as string (Fallback if bytes fail).
+            # 3. Dummy Object (Last resort to prevent the fetch loop from crashing).
+            try:
+                email_object = parse_from_bytes(message_bytes)
+            except Exception as e:
+                demisto.error(f"Parser warning for email {id_}: {e}. Attempting string fallback.")
+                try:
+                    message_string = message_bytes.decode("utf-8", errors="ignore")
+                    email_object = parse_from_string(message_string)
+                except:
+                    # Total fallback: Create a dummy object so XSOAR still gets an incident
+                    # rather than throwing an exception and missing the alert.
+                    class DummyEmail:
+                        to = []
+                        cc = []
+                        bcc = []
+                        attachments = []
+                        from_ = [("Unknown", "unknown@unknown.com")]
+                        message = type('obj', (object,), {'get_content_type': lambda: 'text/plain'})
+                        text_html = []
+                        text_plain = ["(Content Parsing Failed)"]
+                        subject = "Parsing Failed"
+                        headers = {}
+                        body = ""
+                        date = datetime.now(timezone.utc)
+                        message_id = str(id_)
+                    email_object = DummyEmail()
+
+            eml_attachments = self.get_eml_attachments(message_bytes)
+            self.to = [mail_addresses for _, mail_addresses in email_object.to]
+            self.cc = [mail_addresses for _, mail_addresses in email_object.cc]
+            self.bcc = [mail_addresses for _, mail_addresses in email_object.bcc]
+            self.attachments = email_object.attachments
+            self.attachments.extend(eml_attachments)
+            self.from_ = [mail_addresses for _, mail_addresses in email_object.from_][0] if email_object.from_ else "Unknown"
+            self.format = email_object.message.get_content_type()
+
+            # Safely extract content (handle missing parts)
+            self.html = email_object.text_html[0] if email_object.text_html else ""
+            self.text = email_object.text_plain[0] if email_object.text_plain else ""
+
+            self.subject = email_object.subject if email_object.subject else "(No Subject)"
+            self.headers = self.parse_headers(email_object.headers)
+            self.raw_body = email_object.body if include_raw_body else None
+            self.date = email_object.date.replace(tzinfo=timezone.utc) if email_object.date else datetime.now(timezone.utc)
+            self.save_eml_file = save_file
+            self.labels = self._generate_labels()
+            self.message_id = email_object.message_id
+
+            self.raw_json = self.generate_raw_json()
+
+        def parse_email_address_header(self, raw_addresses: list[tuple[str]] | list[list[str]]):
+            formatted_addresses = []
+            for address_data in raw_addresses:
+                if not (isinstance(address_data, list | tuple) and len(address_data) == 2):
+                    continue
+                display_name, email_address = address_data
+                if display_name.strip():
+                    formatted_addresses.append(f"{display_name.strip()} <{email_address.strip()}>")
+                else:
+                    formatted_addresses.append(f"{email_address.strip()}")
+            return "; ".join(formatted_addresses)
+
+        def parse_list_header(self, raw_list_values: list[str]):
+            string_values = [str(item).strip() for item in raw_list_values]
+            return ", ".join(string_values)
+
+        def parse_headers(self, raw_headers: dict):
+            parsed_headers = {}
+            for header_name, raw_value in raw_headers.items():
+                if isinstance(raw_value, str):
+                    parsed_headers[header_name] = raw_value.strip()
+                elif isinstance(raw_value, list):
+                    if header_name in ["From", "To", "Cc", "Bcc", "Delivered-To", "Reply-To"]:
+                        parsed_headers[header_name] = self.parse_email_address_header(raw_value)
+                    else:
+                        parsed_headers[header_name] = self.parse_list_header(raw_value)
+                else:
+                    parsed_headers[header_name] = str(raw_value).strip()
+            return parsed_headers
+
+        @staticmethod
+        def get_eml_attachments(message_bytes: bytes) -> list:
+            eml_attachments = []
+            try:
+                msg = email.message_from_bytes(message_bytes)
+                if msg:
+                    for part in msg.walk():
+                        if part.get_content_maintype() == "multipart" or part.get("Content-Disposition") is None:
+                            continue
+                        filename = part.get_filename()
+                        if filename and filename.endswith(".eml"):
+                            payload = part.get_payload(decode=False)
+                            if isinstance(payload, list): payload = payload[0].as_bytes()
+                            elif isinstance(payload, str): payload = payload.encode("utf-8")
+
+                            eml_attachments.append({
+                                "filename": filename,
+                                "payload": payload,
+                                "binary": False
+                            })
+            except Exception as e:
+                demisto.debug(f"Attachment parsing warning: {e}")
+            return eml_attachments
+
+        def _generate_labels(self) -> list[dict[str, str]]:
+            labels = [
+                {"type": "Email/headers", "value": json.dumps(self.headers)},
+                {"type": "Email/from", "value": self.from_},
+                {"type": "Email/subject", "value": self.subject},
+
+                # --- HARDCODED LABELS FOR MAPPER PRIORITY ---
+                # XSOAR Incoming Mappers prioritize Labels over JSON data.
+                # We force the labels here to ensure the "Reporter" is correctly identified
+                # as the variable defined at the top, bypassing the actual recipient.
+                {"type": "Email/To", "value": FIXED_REPORTER_EMAIL},
+                {"type": "Reporter", "value": FIXED_REPORTER_EMAIL},
+                {"type": "Reporter Email", "value": FIXED_REPORTER_EMAIL}
+            ]
+            return labels
+
+        def parse_attachments(self, output_to_warroom: bool = False) -> list:
+            files = []
+            for attachment in self.attachments:
+                payload = attachment.get("payload")
+                try:
+                    file_data = base64.b64decode(payload) if attachment.get("binary") else payload
+                except:
+                    file_data = payload
+
+                fname = attachment.get("filename") or "attachment.bin"
+                file_result = fileResult(fname, file_data)
+                if output_to_warroom:
+                    demisto.results(file_result)
+                files.append({"path": file_result["FileID"], "name": file_result["File"]})
+            return files
+
+        def convert_to_incident(self) -> dict[str, Any]:
+            email_body = self.text if self.text else self.html
+
+            return {
+                "labels": self._generate_labels(),
+                "occurred": self.date.isoformat(),
+                "created": datetime.now(timezone.utc).isoformat(),
+                "details": email_body or "(Empty Body)",
+                "name": self.subject,
+                "attachment": self.parse_attachments(),
+                "rawJSON": json.dumps(self.raw_json),
+
+                # Force the Incident Type to Phishing to trigger the correct playbook
+                "type": "Phishing",
+
+                # --- CUSTOM FIELDS INJECTION ---
+                # Direct injection into fields to handle cases where the Mapper fails
+                # or where the data needs to be forced (like reporteremail).
+                "CustomFields": {
+                    "reporteremail": FIXED_REPORTER_EMAIL,
+                    "emailfrom": self.from_,
+                    "emailsubject": self.subject,
+                    "emailbody": email_body,
+                    "emailhtml": self.html,
+                    "emailto": FIXED_REPORTER_EMAIL
+                }
+            }
+
+        def generate_raw_json(self, parse_attachments: bool = False, output_to_warroom: bool = False) -> dict:
+            return {
+                # --- JSON KEYS & MAPPER SUPPORT ---
+                # We include both 'html' (lowercase) and 'HTML' (uppercase) because
+                # different XSOAR versions/mappers look for different keys.
+                "HTML": self.html,
+                "html": self.html,
+
+                # Force 'to' field to match the hardcoded reporter
+                "to": FIXED_REPORTER_EMAIL,
+
+                "text": self.text,
+                # Coalesce text and html into a single 'body' field for easy mapping
+                "body": self.text if self.text else self.html,
+
+                "headers": self.headers,
+                "from": self.from_,
+                "subject": self.subject,
+                "cc": ",".join(self.cc),
+                "bcc": ",".join(self.bcc),
+                "format": self.format,
+                "attachments": self.parse_attachments(output_to_warroom) if parse_attachments else ",".join([a["filename"] for a in self.attachments])
+            }
+
+    def fetch_mails(client: IMAPClient, limit: int = 200, uid_to_fetch_from: int = 0, time_to_fetch_from=None, **kwargs) -> tuple[list, list, int]:
+
+        query = []
+        # 1. Prefer UID-based fetching (fetching only what is new since last run)
+        if uid_to_fetch_from and uid_to_fetch_from > 0:
+            query.append(f"UID {uid_to_fetch_from + 1}:*")
+        # 2. Fallback to Time-based fetching (for first run)
+        elif time_to_fetch_from:
+            query = ["SINCE", time_to_fetch_from]
+        # 3. Fallback to ALL if no filters exist
+        if not query:
+            query = ['ALL']
+
+        demisto.debug(f"Searching with Query: {query}")
+        try:
+            messages_uids = client.search(query)
+        except Exception as e:
+            demisto.debug(f"Search failed: {e}. Falling back to ALL.")
+            messages_uids = client.search(['ALL'])
+
+        messages_uids = [int(x) for x in messages_uids]
+        messages_uids.sort()
+        # Ensure we don't re-fetch the last UID if the server range was inclusive
+        messages_uids = [uid for uid in messages_uids if uid > uid_to_fetch_from]
+
+        if len(messages_uids) > limit:
+            messages_uids = messages_uids[:limit]
+
+        fetched_email_objects = []
+
+        # --- SURGICAL FETCH STRATEGY ---
+        # We fetch 'RFC822' (Whole Email) AND 'BODY.PEEK' (Parts) simultaneously.
+        # This is required because iCloud sometimes returns None for RFC822 on spam/junk
+        # emails, even though the Header and Body Text are physically present on the server.
+        fetch_keys = ['RFC822', 'BODY.PEEK[HEADER]', 'BODY.PEEK[TEXT]']
+        fetch_results = client.fetch(messages_uids, fetch_keys)
+
+        for mail_id, data in fetch_results.items():
+            message_bytes = data.get(b"RFC822")
+
+            # --- STITCHING LOGIC ---
+            # If the whole email (RFC822) is missing, manually stitch Header + Body together
+            # to trick the parser into reading it.
+            if not message_bytes:
+                header_bytes = data.get(b"BODY[HEADER]") or data.get(b"BODY.PEEK[HEADER]")
+                body_bytes = data.get(b"BODY[TEXT]") or data.get(b"BODY.PEEK[TEXT]")
+
+                if header_bytes and body_bytes:
+                    message_bytes = header_bytes + b"\r\n" + body_bytes
+                elif header_bytes:
+                    # If body is missing entirely (Ghost Email), create a fake body so we still get the headers
+                    message_bytes = header_bytes + b"\r\n\r\n(Body Content Unavailable/Empty on Server)"
+                else:
+                    continue
+
+            try:
+                email_message_object = Email(message_bytes, False, False, mail_id)
+                fetched_email_objects.append(email_message_object)
+            except Exception as e:
+                demisto.error(f"Skipping Email {mail_id}: {e}")
+                continue
+
+        next_uid = messages_uids[-1] if messages_uids else uid_to_fetch_from
+        ids_fetched = [mail.id for mail in fetched_email_objects]
+        return fetched_email_objects, ids_fetched, next_uid
+
+    def fetch_incidents(client, last_run, first_fetch_time, **kwargs):
+        uid_to_fetch_from = arg_to_number(last_run.get("last_uid", 0)) if last_run else 0
+
+        time_to_fetch = None
+        if uid_to_fetch_from == 0 and first_fetch_time:
+            time_to_fetch = parse(f"{first_fetch_time} UTC")
+
+        mails, _, next_uid = fetch_mails(client, uid_to_fetch_from=uid_to_fetch_from, time_to_fetch_from=time_to_fetch, **kwargs)
+
+        incidents = [mail.convert_to_incident() for mail in mails]
+        next_run = {"last_uid": str(next_uid)}
+        return next_run, incidents
+
+    def list_emails(client, limit):
+        mails, _, _ = fetch_mails(client, limit=limit, uid_to_fetch_from=0)
+        results = [{"ID": m.id, "Subject": m.subject, "Date": m.date.isoformat()} for m in mails]
+        return CommandResults(outputs_prefix="MailListener.Email", outputs_key_field="ID", outputs=results)
+
+    def main():
+        try:
+            params = demisto.params()
+            url = params.get("MailServerURL")
+            port = arg_to_number(params.get("port"))
+            folder = params.get("folder")
+            username = params.get("credentials").get("identifier")
+            password = params.get("credentials").get("password")
+            ssl_ctx = ssl.create_default_context()
+            ssl_ctx.check_hostname = False
+            ssl_ctx.verify_mode = ssl.CERT_NONE
+
+            cred_params = params.get("clientCertAndKey") or {}
+            if cert_pem := demisto.get(cred_params, "credentials.sshkey"):
+                 with NamedTemporaryFile(mode="w") as pem:
+                    pem.write(cert_pem)
+                    pem.flush()
+                    pem.seek(0)
+                    ssl_ctx.load_cert_chain(certfile=pem.name)
+
+            with IMAPClient(url, ssl=True, port=port, ssl_context=ssl_ctx) as client:
+                client.login(username, password)
+                client.select_folder(folder)
+
+                if demisto.command() == "fetch-incidents":
+                    next_run, incidents = fetch_incidents(client, demisto.getLastRun(), (params.get("first_fetch") or "3 days").strip())
+                    if next_run: demisto.setLastRun(next_run)
+                    demisto.incidents(incidents)
+                elif demisto.command() == "mail-listener-list-emails":
+                    return_results(list_emails(client, 20))
+                elif demisto.command() == "test-module":
+                    client.noop()
+                    return_results("ok")
+
+        except Exception as e:
+            return_error(f"Error: {str(e)}")
+
+    if __name__ in ("__main__", "__builtin__", "builtins"):
+        main()
+    register_module_line('Mail Listener v2', 'end', __line__())
+  type: python
+  commands:
+  - name: mail-listener-list-emails
+    arguments: []
+    outputs:
+    - contextPath: MailListener.EmailPreview.Subject
+      description: The subject of the email.
+      type: String
+    - contextPath: MailListener.EmailPreview.Date
+      description: The date when the mail was received.
+      type: Date
+    - contextPath: MailListener.EmailPreview.To
+      description: The recipient of the email.
+      type: String
+    - contextPath: MailListener.EmailPreview.From
+      description: The sender of the email.
+      type: String
+    - contextPath: MailListener.EmailPreview.ID
+      description: The ID of the email.
+      type: string
+    description: Retrieves emails according to the configuration.
+  - name: mail-listener-get-email
+    arguments:
+    - name: message-id
+      required: true
+      description: The message ID retrieved from the 'mail-listener-list-emails' command.
+    outputs:
+    - contextPath: MailListener.Email.to
+      description: The recipients of the email.
+      type: String
+    - contextPath: MailListener.Email.cc
+      description: The cc of the email.
+      type: String
+    - contextPath: MailListener.Email.bcc
+      description: The bcc of the email.
+      type: String
+    - contextPath: MailListener.Email.from
+      description: The sender of the email.
+      type: String
+    - contextPath: MailListener.Email.format
+      description: The format of the email.
+      type: String
+    - contextPath: MailListener.Email.text
+      description: The plain text of the email.
+      type: String
+    - contextPath: MailListener.Email.HTML
+      description: The HTML display of the email, if it exists.
+      type: String
+    - contextPath: MailListener.Email.subject
+      description: The subject of the email.
+      type: String
+    - contextPath: MailListener.Email.attachments
+      description: The attachments of the email, if it exists.
+      type: String
+    - contextPath: MailListener.Email.headers
+      description: The headers of the email.
+      type: String
+    description: Retrieves an email by email ID.
+  - name: mail-listener-get-email-as-eml
+    arguments:
+    - name: message-id
+      required: true
+      description: The message ID retrieved from the 'mail-listener-list-emails' command.
+    description: Fetches an email by message ID and returns the information in an
+      eml file format.
+  - name: mail-listener-list-folders
+    arguments: []
+    outputs:
+    - contextPath: MailListener.Folders.Name
+      description: The name of the IMAP folder.
+      type: string
+    description: Lists all available IMAP folders on the server. Use this to identify
+      the correct folder name (e.g., "Junk", "Spam", "INBOX.Junk") to use in the integration
+      configuration.
+  dockerimage: demisto/py3-tools:1.0.0.3205634
+  isfetch: true
+  runonce: false
+  subtype: python3
+sourcemoduleid: Mail Listener v2
